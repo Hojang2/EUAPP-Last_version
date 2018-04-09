@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="de.bbs_donnersbergkreis.www.schoolapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the SCHOOL GUIDE"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"  />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="IT: ITI G.Ferraris"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:onClick="pressButton1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="DE: BBS-Donnersbergkreis"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:onClick="pressButton2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Cze: SPSEIT Purkynova "
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:onClick="pressButton3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PL: Zespol Szkol nr. 1 w Kozienicach im. Legionow Polskich"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button3"
+        android:onClick="pressButton5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/uk_flag_language_button"
+        android:id="@+id/imageButton4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

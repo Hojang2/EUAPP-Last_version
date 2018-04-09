@@ -1,0 +1,9 @@
+*.imp
+.gradle
+/local/workspace.xml
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuils
