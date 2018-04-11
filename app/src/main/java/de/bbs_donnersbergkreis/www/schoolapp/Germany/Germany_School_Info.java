@@ -1,25 +1,71 @@
 package de.bbs_donnersbergkreis.www.schoolapp.Germany;
 
-        import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.widget.TextView;
 
+        import de.bbs_donnersbergkreis.www.schoolapp.Czech.JSONObjectRequestWrapper;
         import de.bbs_donnersbergkreis.www.schoolapp.R;
 
         import static de.bbs_donnersbergkreis.www.schoolapp.R.string.germ_info1;
 
+
+
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.util.Log;
+        import android.widget.TextView;
+
+        import com.android.volley.Response;
+        import com.android.volley.VolleyError;
+
+        import org.json.JSONException;
+        import org.json.JSONObject;
+
+        import de.bbs_donnersbergkreis.www.schoolapp.R;
+
+
 public class Germany_School_Info extends AppCompatActivity {
-    private TextView t;
+
+    TextView view;
+    String theStringYouEncoded;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_germany__history_of_school);
-        t=(TextView)findViewById(R.id.gerHistoryText);
-        /*t.setText("The BBS-Donnersbergkreis was founded in 1996.\n Since a few years, " +
-                "the BBS-Donnersbergkreis got a cooperation with the Hochschule Worms - University of Applied Scinces." +
-                " \nThe BBS-Donnersbergkreis got differend typs of school, there are the Berufliches Gymnasium, the Duale " +
-                "Oberschule, the Berufsschule, the Höhere Berufsfachschule, the Berufsfachschule I and II and " +
-                "the Berufsvorbereitungsjahr.");*/
-        t.setText(getString(R.string.germ_info1) + "\n" + getString(R.string.germ_info2) + "\n" + getString(R.string.germ_info3) + "\n" + getString(R.string.germ_info4) + "\n" + getString(R.string.germ_info5));
+
+        try {
+            new JSONObjectRequestWrapper(this)
+                    .create("RedTeam", "test2")
+                    .add("id", "DEU")
+                    .send(listener, fail);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        view=(TextView)findViewById(R.id.germany_history_id);
     }
+
+
+
+
+    private Response.Listener<JSONObject> listener = new Response.Listener<JSONObject>() {
+        @Override
+        public void onResponse(JSONObject response) {
+            Log.w("AAAA", response.toString());
+            try {
+                theStringYouEncoded = response.getString( "text" );
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            view.setText(theStringYouEncoded);
+        }
+    };
+
+    private Response.ErrorListener fail = new Response.ErrorListener() {
+        @Override
+        public void onErrorResponse(VolleyError error) {
+            Log.v("Faild to send message", error.getMessage());
+
+        }
+    };
 }
