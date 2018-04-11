@@ -31,7 +31,7 @@ public class History_school extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
+        view=(TextView)findViewById(R.id.czech_history_id);
     }
 
 
@@ -42,7 +42,7 @@ public class History_school extends AppCompatActivity {
         public void onResponse(JSONObject response) {
             Log.w("AAAA", response.toString());
             try {
-                theStringYouEncoded = (String) response.get( "data" );
+                theStringYouEncoded = response.getString( "test" );
             } catch (JSONException e) {
                 e.printStackTrace();
             }
