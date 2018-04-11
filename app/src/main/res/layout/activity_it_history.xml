@@ -9,7 +9,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/it2"
     tools:context="de.bbs_donnersbergkreis.www.schoolapp.Italy.IT_history">
 
     <ScrollView
@@ -28,6 +27,17 @@
                 android:id="@+id/itHistoryText" />
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="156dp"
+        app:srcCompat="@drawable/it2"
+        android:alpha=".80"
+        />
 
 
 </RelativeLayout>

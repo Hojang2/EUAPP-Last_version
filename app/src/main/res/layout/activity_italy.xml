@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_italy"
     android:layout_width="match_parent"
@@ -9,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.bbs_donnersbergkreis.www.schoolapp.Italy.Italy"
-    android:background="@drawable/it2">
+    android:background="@color/backround">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/textView_Main_Menu_IT"
         android:textSize="30dp"
-        android:textColor="@color/colorOrange"/>
+        android:textColor="@color/colorHeadlineText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +30,7 @@
         android:textSize="25dp"
         android:layout_below="@+id/textView_Main_Menu_IT"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorOrange"/>
+        android:textColor="@color/colorHeadlineText"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -80,4 +81,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        app:srcCompat="@drawable/it2" />
 </RelativeLayout>
