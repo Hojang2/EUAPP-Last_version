@@ -13,8 +13,6 @@
     android:background="@drawable/pl_flag">
 
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,6 +30,7 @@
         android:text="Location"
         android:textColor="@color/colorAccent"
         android:layout_below="@+id/TextView_School_PL"
+        android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
@@ -64,40 +63,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button_Teachers_PL"
-        android:text="Teachers"
+        android:id="@+id/button_Disscussion_Blog_PL"
+        android:text="Disscussion Blog"
         android:textColor="@color/colorAccent"
         android:layout_below="@+id/button_Gallery_PL"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_Disscussion_Blog_PL"
-        android:text="Disscussion Blog"
-        android:textColor="@color/colorAccent"
-        android:layout_below="@+id/button_Teachers_PL"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_Mini_Games_PL"
-        android:text="Mini Games"
-        android:textColor="@color/colorAccent"
-        android:clickable="false"
-        android:layout_below="@+id/button_Disscussion_Blog_PL"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <!--  watch out and set the button on true if u have added the mini games-->
 
     <TextView
         android:layout_width="wrap_content"

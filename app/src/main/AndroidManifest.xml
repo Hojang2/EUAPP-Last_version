@@ -49,35 +49,24 @@
         <activity android:name=".Germany.Germany_location" />
         <activity android:name=".Germany.Germany_School_Info" />
         <activity android:name=".Germany.Germany_Gallery" />
-        <activity android:name=".Germany.Germany_Teachers" />
         <activity android:name=".Germany.Germany_Discussion_blog" />
-        <activity android:name=".Germany.Germany_Mini_Games" />
-        <activity android:name=".Czech.Czech_Location" />
         <activity android:name=".Czech.History_school" />
         <activity android:name=".Czech.CZE_Pictures" />
-        <activity android:name=".Czech.List_CZE" />
         <activity android:name=".Czech.CZE_discussion" />
-        <activity android:name=".Czech.CZE_meal" />
-        <activity android:name=".Czech.CZE_Events" />
         <activity
             android:name=".Italy.IT_location"
             android:label="@string/title_activity_it_location"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Italy.IT_history" />
         <activity android:name=".Italy.IT_pictures" />
-        <activity android:name=".Italy.IT_list" />
         <activity android:name=".Italy.IT_discuss" />
-        <activity android:name=".Italy.IT_Meal" />
-        <activity android:name=".Italy.IT_events" />
         <activity android:name=".Poland.PL_Location" />
         <activity
             android:name=".Poland.PL_history"
             android:label="@string/title_activity_pl_history"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Poland.PL_pictures" />
-        <activity android:name=".Poland.PL_list" />
         <activity android:name=".Poland.PL_school" />
-        <activity android:name=".Poland.PL_events" />
         <activity android:name=".Poland.PL_discuss" />
         <activity android:name=".MainActivity" />
         <activity

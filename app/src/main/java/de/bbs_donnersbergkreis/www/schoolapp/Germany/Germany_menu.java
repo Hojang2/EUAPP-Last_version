@@ -20,11 +20,7 @@ public class Germany_menu extends AppCompatActivity {
 
         Button b3 = (Button) findViewById(R.id.button_Gallery);
 
-        Button b4 = (Button) findViewById(R.id.button_Teachers);
-
         Button b5 = (Button) findViewById(R.id.button_Disscussion_Blog);
-
-        Button b6 = (Button) findViewById(R.id.button_Mini_Games);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,24 +43,10 @@ public class Germany_menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        b4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Germany_menu.this, Germany_Teachers.class);
-                startActivity(intent);
-            }
-        });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Germany_menu.this, Germany_Discussion_blog.class);
-                startActivity(intent);
-            }
-        });
-        b6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Germany_menu.this, Germany_Mini_Games.class);
                 startActivity(intent);
             }
         });

@@ -13,8 +13,6 @@
     android:background="@drawable/cze_flag">
 
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,21 +59,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_Mini_Games_CZE"
-        android:text="Mini Games"
-        android:textColor="@color/colorAccent"
-        android:clickable="false"
-        android:layout_below="@+id/button_Disscussion_Blog_CZE"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <!--  watch out and set the button on true if u have added the mini games-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,6 +76,7 @@
         android:text="Location"
         android:textColor="@color/colorAccent"
         android:layout_below="@+id/TextView_School_CZE"
+        android:layout_marginTop="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"

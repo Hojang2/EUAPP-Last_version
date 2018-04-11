@@ -23,8 +23,6 @@ public class Czech extends AppCompatActivity {
 
     Button b5 = (Button) findViewById(R.id.button_Disscussion_Blog_CZE);
 
-    Button b6 = (Button) findViewById(R.id.button_Mini_Games_CZE);
-
     b1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -50,13 +48,6 @@ public class Czech extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(Czech.this, CZE_discussion.class);
-            startActivity(intent);
-        }
-    });
-    b6.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(Czech.this, CZE_meal.class);
             startActivity(intent);
         }
     });

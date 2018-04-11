@@ -36,10 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_Location"
-         android:text="Location"
+        android:text="Location"
         android:textColor="@color/colorAccent"
-        android:onClick="button_Location"
         android:layout_below="@+id/TextView_School"
+        android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
@@ -50,7 +50,6 @@
         android:layout_height="wrap_content"
         android:text="School Info"
         android:textColor="@color/colorAccent"
-        android:onClick="button_History_of_School"
         android:id="@+id/button_School_info"
         android:layout_below="@+id/button_Location"
         android:layout_alignParentRight="true"
@@ -64,25 +63,12 @@
         android:id="@+id/button_Gallery"
         android:text="Gallery"
         android:textColor="@color/colorAccent"
-        android:onClick="button_Pictures"
         android:layout_below="@+id/button_School_info"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_Teachers"
-        android:text="Teachers"
-        android:textColor="@color/colorAccent"
-        android:onClick="button_List_of_graduates"
-        android:layout_below="@+id/button_Gallery"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -90,25 +76,9 @@
         android:id="@+id/button_Disscussion_Blog"
         android:text="Disscussion Blog"
         android:textColor="@color/colorAccent"
-        android:onClick="button_Disscussion_Blog"
-        android:layout_below="@+id/button_Teachers"
+        android:layout_below="@+id/button_Gallery"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/button_Mini_Games"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button_Disscussion_Blog"
-        android:clickable="false"
-        android:text="Mini Games"
-        android:textColor="@color/colorAccent" />
-    <!--  watch out and set the button on true if u have added the mini games-->
-
 </RelativeLayout>
