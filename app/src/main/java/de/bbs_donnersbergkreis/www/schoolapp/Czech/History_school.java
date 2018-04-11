@@ -25,7 +25,7 @@ public class History_school extends AppCompatActivity {
 
         try {
             new JSONObjectRequestWrapper(this)
-                    .create("RedTeam", "test3")
+                    .create("RedTeam", "test2")
                     .add("id", "CZE")
                     .send(listener, fail);
         } catch (JSONException e) {
@@ -42,7 +42,7 @@ public class History_school extends AppCompatActivity {
         public void onResponse(JSONObject response) {
             Log.w("AAAA", response.toString());
             try {
-                theStringYouEncoded = response.getString( "test" );
+                theStringYouEncoded = response.getString( "text" );
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -53,7 +53,7 @@ public class History_school extends AppCompatActivity {
     private Response.ErrorListener fail = new Response.ErrorListener() {
         @Override
         public void onErrorResponse(VolleyError error) {
-           // Log.v("Faild to send message", response.toString());
+           Log.v("Faild to send message", error.getMessage());
 
         }
     };
