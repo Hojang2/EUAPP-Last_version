@@ -1,5 +1,6 @@
 package de.bbs_donnersbergkreis.www.schoolapp.Czech;
 
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -15,6 +16,7 @@ import de.bbs_donnersbergkreis.www.schoolapp.R;
 public class czech_map extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    LocationManager locationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class czech_map extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
 
@@ -40,9 +43,9 @@ public class czech_map extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        //Add a marker in Sydney and move the camera
+        LatLng sydney = new LatLng(49.225400, 16.580296);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker of School"));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney,18), 3000, null);
     }
 }
