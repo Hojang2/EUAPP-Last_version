@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_germany__history_of_school"
     android:layout_width="match_parent"
@@ -9,9 +10,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.bbs_donnersbergkreis.www.schoolapp.Germany.Germany_School_Info"
-    android:background="@drawable/flag_ger"
+
     >
 
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="326dp"
+        android:layout_height="317dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/flag_ger"
+        android:alpha=".45"
+        />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,12 +31,12 @@
             android:orientation="vertical" >
 
             <TextView
-                android:textColor="#FFFFFF"
-                android:textColorHighlight="#FFFFFF"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/germany_history_id" />
         </LinearLayout>
     </ScrollView>
+
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_cze__pictures"
     android:layout_width="match_parent"
@@ -9,11 +10,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.bbs_donnersbergkreis.www.schoolapp.Czech.CZE_Pictures"
-    android:background="@drawable/cze_flag">>
+  >>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true">
 
@@ -48,4 +50,21 @@
 
         </RelativeLayout>
     </ScrollView>
+=======
+        android:text="Photo CZE"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/cze_flag"
+        android:alpha=".80"/>
+        />
+>>>>>>> d8601fb16f6b83507108f4ff9714beed17e19260
 </RelativeLayout>
