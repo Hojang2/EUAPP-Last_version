@@ -19,12 +19,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView_Main_Menu_IT"
-<<<<<<< HEAD
-        android:textSize="30dp" />
-=======
         android:textSize="30dp"
         android:textColor="@color/colorHeadlineText"/>
->>>>>>> d8601fb16f6b83507108f4ff9714beed17e19260
 
     <TextView
         android:layout_width="wrap_content"

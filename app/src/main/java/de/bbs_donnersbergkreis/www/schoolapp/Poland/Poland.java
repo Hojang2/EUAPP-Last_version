@@ -25,7 +25,7 @@ public class Poland extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Poland.this, PL_Location.class);
+                Intent intent = new Intent(Poland.this, Pl_map.class);
                 startActivity(intent);
             }
         });

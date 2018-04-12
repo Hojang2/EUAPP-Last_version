@@ -33,4 +33,6 @@
     <string name="germ_info5">We would be pleased to invite you as our guests at our schools. Come and visit us! </string>
     <string name="title_activity_czech_map">Map</string>
     <string name="title_activity_germany_map">Map</string>
+    <string name="title_activity_pl_map">Map</string>
+    <string name="title_activity_it_map">Map</string>
 </resources>

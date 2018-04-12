@@ -27,7 +27,7 @@ public class Italy extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Italy.this, IT_location.class);
+                Intent intent = new Intent(Italy.this, IT_map.class);
                 startActivity(intent);
             }
         });
@@ -53,11 +53,6 @@ public class Italy extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    public void button_Location_it(View view) {
-        Intent intent = new Intent(this, IT_location.class);
-        startActivity(intent);
     }
 
     public void btn_history(View view) {

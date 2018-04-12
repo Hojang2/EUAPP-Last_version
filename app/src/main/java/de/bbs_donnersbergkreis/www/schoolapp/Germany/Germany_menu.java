@@ -23,6 +23,13 @@ public class Germany_menu extends AppCompatActivity {
         Button b5 = (Button) findViewById(R.id.button_Disscussion_Blog);
 
 
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Germany_menu.this, Germany_map.class);
+                startActivity(intent);
+            }
+        });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
