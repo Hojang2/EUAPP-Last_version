@@ -10,8 +10,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.bbs_donnersbergkreis.www.schoolapp.Germany.Germany_Gallery">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pictures..."/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_ger1"
+                android:id="@+id/imageViewGer1"
+                android:layout_below="@+id/imageViewGer2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_ger2"
+                android:id="@+id/imageViewGer2"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_ger3"
+                android:id="@+id/imageViewGer3"
+                android:layout_below="@+id/imageViewGer1"/>
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

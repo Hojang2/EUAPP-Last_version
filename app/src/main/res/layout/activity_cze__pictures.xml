@@ -11,13 +11,41 @@
     tools:context="de.bbs_donnersbergkreis.www.schoolapp.Czech.CZE_Pictures"
     android:background="@drawable/cze_flag">>
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Photo CZE"
-        android:textSize="30dp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_cze1"
+                android:id="@+id/imageViewCze1"
+                android:layout_below="@+id/imageViewCze2"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_cze2"
+                android:id="@+id/imageViewCze2"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_cze3"
+                android:id="@+id/imageViewCze3"
+                android:layout_below="@+id/imageViewCze1" />
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
